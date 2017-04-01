@@ -1,7 +1,0 @@
-测试网址：sxsl.s202.oknic.net.cn
-FTP信息：
-IP：1.85.4.202
-用户名：shangxing
-密   码：shangxing123!@#
-
-后台账号是admin  密码也是admin
