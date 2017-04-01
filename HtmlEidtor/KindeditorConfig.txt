@@ -1,0 +1,75 @@
+﻿//默认所有功能配置
+var options={
+items:[
+        'source', '|', 'undo', 'redo', '|', 'preview', 'print', 'template', 'code', 'cut', 'copy', 'paste',
+        'plainpaste', 'wordpaste', '|', 'justifyleft', 'justifycenter', 'justifyright',
+        'justifyfull', 'insertorderedlist', 'insertunorderedlist', 'indent', 'outdent', 'subscript',
+        'superscript', 'clearhtml', 'quickformat', 'selectall', '|', 'fullscreen', '/',
+        'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
+        'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image', 'multiimage',
+        'flash', 'media', 'insertfile', 'table', 'hr', 'emoticons', 'baidumap', 'pagebreak',
+        'anchor', 'link', 'unlink', '|', 'about'
+]
+}
+
+//所有功能配置编辑器
+var options = {
+                uploadJson : 'HtmlEidtor/asp.net/upload_json.ashx',     //上传文件配置
+                fileManagerJson : 'HtmlEidtor/asp.net/file_manager_json.ashx',   //上传文件配置
+                allowFileManager : true,  //是否允许查看服务器空间
+				filterMode:false,   //是否过滤代码
+				themeType:"default",  //主题
+				pasteType:2，//0:禁止粘贴, 1:纯文本粘贴, 2:HTML粘贴
+			
+};
+
+//纯文本编辑器
+
+var options_txt = {
+                uploadJson : 'HtmlEidtor/asp.net/upload_json.ashx',     //上传文件配置
+                fileManagerJson : 'HtmlEidtor/asp.net/file_manager_json.ashx',   //上传文件配置
+				filterMode:false,   //是否过滤代码
+				themeType:"default",  //主题
+				pasteType:2，//0:禁止粘贴, 1:纯文本粘贴, 2:HTML粘贴
+					items:[
+					   'preview',  'clearhtml','quickformat', 'selectall', '|', 'fullscreen',  '|', 'justifyleft', 'justifycenter', 'justifyright',
+						'justifyfull', 'insertorderedlist', 'insertunorderedlist', 'indent', 'outdent',
+						'|','formatblock', 'fontname', 'fontsize', '|', 
+						 'forecolor', 'hilitecolor', 'bold','italic', 'underline', 'strikethrough', 'lineheight', 'removeformat',
+						  '|', 'image','insertfile', 'table', 'hr',  'pagebreak','anchor', 'link',
+						]
+};
+
+//评论编辑器
+
+var options_pl = {
+				filterMode:false,   //是否过滤代码
+				themeType:"default",  //主题
+				pasteType:1，//0:禁止粘贴, 1:纯文本粘贴, 2:HTML粘贴
+					items:[
+					    'justifyleft', 'justifycenter', 'justifyright','justifyfull','indent', 'outdent',
+						'|','fontname', 'fontsize', '|', 'bold','italic', 'underline', 'strikethrough', 'lineheight', 'emoticons',
+						]
+};
+//文件上传控件
+KindEditor.ready(function(K) {
+				var editor = K.editor({
+					allowFileManager : true
+				});
+				K('#insertfile').click(function() {
+					editor.loadPlugin('insertfile', function() {
+						editor.plugin.fileDialog({
+							fileUrl : K('#url').val(),
+							clickFn : function(url, title) {
+								K('#url').val(url);
+								editor.hideDialog();
+							}
+						});
+					});
+				});
+			});
+//图片上传
+
+//图片批量上传
+
+

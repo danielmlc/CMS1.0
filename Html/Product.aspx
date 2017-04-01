@@ -1,0 +1,10 @@
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" %>
+<%=CMS.Inc("Header.aspx") %>
+
+<!-- 主体 -->
+ <%=CMS.Output(false,"<div class=\"container-fluid cus-navbar cus-container-fluid\"><div class=\"jumbotron  min-height\"  style=\"background-image: url([中文本一]);\">[长文本二]</div></div><div class=\"container\"><div class=\"col-md-12\"><div class=\"panel panel-default\"> <div class=\"panel-body\">{1}</div></div></div></div><div class=\"container\"><div class=\"page-header\"><h3 class=\"text-center\">为每一位客户创造更佳的工作体验</h3></div></div></div><div class=\"container\"> <div class=\"row \"><div class=\"col-md-4 \"><div class=\"bigpadding\"><div class=\"media\"><div class=\"media-left\"><a href=\"#\"><img class=\"media-object icon_size\" src=\"img/svg/arrows.svg\" ></a></div><div class=\"media-body\"><h4 class=\"media-heading\">资源下载</h4>[长文本一]</div></div></div></div><div class=\"col-md-4\"><div class=\"bigpadding\"><div class=\"media\"><div class=\"media-left\"><a href=\"#\"><img class=\"media-object icon_size\" src=\"img/svg/play.svg\" ></a></div><div class=\"media-body\"><h4 class=\"media-heading\">预约演示</h4><ul ><li>预约电话：[短文本五]</li><li><a href=\"[短文本三]\">点击在线演示</a></li><li>演示账号：[短文本四]</li></ul> </div> </div> </div></div><div class=\"col-md-4\"><div class=\"bigpadding\"><div class=\"media\"><div class=\"media-left\"><a href=\"#\"><img class=\"media-object icon_size\" src=\"img/svg/people.svg\" ></a></div><div class=\"media-body\"><h4 class=\"media-heading\">服务支持</h4><ul><li><a href=\"#\">产品问题库</a></li><li><a href=\"#\">在线服务：【点击这里】</a></li><li><a href=\"#\">电话服务：02988227793</a></li></ul></div> </div></div></div></div></div><div class=\"container\"> <div class=\"row\">	<div class=\"padding text-center\"><h4>物资管理系统在用用户现状</h4> </div> </div><div class=\"row\">{0} </div></div>","<div class=\"col-md-6 \"><div class=\"bigpadding\"><div class=\"media\"><div class=\"media-left\"><a href=\"#\"><img class=\"media-object icon_size\" src=\"[图集-路径]\"></a></div><div class=\"media-body\"><h4 class=\"media-heading\">[图集-标题]</h4>[图集-描述]</div></div> </div> </div>","[文本-内容]<hr/>","") %>
+  <br/>
+  <br/>
+<!-- 页脚 -->
+<%=CMS.Inc("Footer.aspx") %>

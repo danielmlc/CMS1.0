@@ -1,0 +1,12 @@
+.ke-container-SelfSink {
+        display: block;
+        border: 1px solid #BDD3EF;
+        background-color: #BDD3EF;
+        overflow: hidden;
+}
+.ke-container-SelfSink .ke-toolbar {
+        border-bottom: 1px solid #BDD3EF;
+        background-color: #BDD3EF;
+        padding: 2px 5px;
+        overflow: hidden;
+}
